@@ -1,0 +1,6 @@
+/var/log/srv-digitalizacao/srv-digitalizacao.log {
+	weekly
+	rotate 12
+	compress
+        missingok
+}
