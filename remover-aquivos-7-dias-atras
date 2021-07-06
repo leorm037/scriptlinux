@@ -1,0 +1,5 @@
+#!/bin/bash
+echo $(date)  >> /var/log/srv-digitalizacao/srv-digitalizacao.log
+find /srv/digitalizacao/jpg/* -mtime +7 -exec rm {} \; &>> /var/log/srv-digitalizacao/srv-digitalizacao.log
+find /srv/digitalizacao/pdf/* -mtime +7 -exec rm {} \; &>> /var/log/srv-digitalizacao/srv-digitalizacao.log
+echo "" >> /var/log/srv-digitalizacao/srv-digitalizacao.log
